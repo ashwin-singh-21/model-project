@@ -35,7 +35,9 @@ def profile(request):
     return render(request, 'profile.html',{'title':'Django Page','link':'http://google.com'})
 
 
+# CRUD Operations
 
+#Read Operation
 def fc1(request):
     s = mymodel.objects.all()
     context = {'s':s }
@@ -44,7 +46,7 @@ def fc1(request):
 
 
 
-# CRUDE Operations
+
 # Create Operations
 def create(request):
     form = web()
